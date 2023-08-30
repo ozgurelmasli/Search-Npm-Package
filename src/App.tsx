@@ -9,7 +9,9 @@ function App() {
     <ChakraProvider>
       <Provider store={store}>
         <div>
-          <h1>Search for a package</h1>
+          <h3 style={{ paddingTop: 10, paddingLeft: 15, fontSize: 35 }}>
+            Search for a package
+          </h3>
           <RepositoryList />
         </div>
       </Provider>

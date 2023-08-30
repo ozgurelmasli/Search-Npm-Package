@@ -5,10 +5,8 @@ import {
   AlertTitle,
   Button,
   Input,
-  ListItem,
   Spinner,
   Stack,
-  UnorderedList,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useActions } from "../hooks/useActions";
@@ -63,11 +61,7 @@ export const RepositoryList = () => {
         {!error &&
           !loading &&
           data.map((model) => {
-            return (
-              <UnorderedList spacing={5}>
-                <ListItem key={model.name}>{model.npmUrl}</ListItem>
-              </UnorderedList>
-            );
+            return <h1 key={model.name}>{model.npmUrl}</h1>;
           })}
       </div>
     </div>
